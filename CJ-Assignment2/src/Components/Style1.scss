@@ -1,0 +1,64 @@
+.navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    &-logo {
+        width: 20vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+        img {
+            width: 50%;
+            object-fit: contain;
+        }
+    }
+    &-menu {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        li {
+            color: white;
+            font-size: 30px;
+            margin-right: 50px;
+            a {
+                text-decoration: none;
+                color: azure;
+            }
+            &.active {
+                border-bottom: 2px solid whitesmoke;
+            }
+        }
+    }
+}
+
+.product {
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: black 0px 5px 10px;
+    overflow: hidden;
+    width: calc(100% / 5);
+    &-image {
+        width: 100%;
+        object-fit: cover;
+        height: 150px;
+    }
+    &-info {
+        display: flex;
+        padding: 6px 9px 0px 12px;
+        box-sizing: border-box;
+        justify-content: space-between;
+        background-color: azure;
+    }
+    .star {
+        color: goldenrod;
+        font-size: 20px;
+    }
+}
